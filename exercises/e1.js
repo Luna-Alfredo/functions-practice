@@ -48,7 +48,7 @@ logMyMessage('My message');
 
 // Your code goes here...
 function logMessageWithMyName(name){
-  console.log('My name is ' + name);
+  console.log('My name is ' + name + '!');
 }
 logMessageWithMyName('Andrey');
 /**
@@ -63,10 +63,10 @@ logMessageWithMyName('Andrey');
 */
 
 // Your code goes here...
-function logMyInfo(name,age){
-  console.log('My name is ' + name + " I am" + age + " years old!");
+function logMyInfo(name, age){
+  console.log('My name is ' + name + ". I am " + age + " years old!");
 }
-logMyInfo('Andrey',18);
+logMyInfo('Andrey', 18);
 
 
 // === TEST YOURSELF ===

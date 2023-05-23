@@ -15,10 +15,17 @@
  */
 
 // Your code goes here...
-
-
-
-
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2){
+  for (let i = 0; i < arr.length; i++) {
+    const item = arr[i];
+  if (item < val2 && item > val1) {
+    return true; 
+    }
+  } 
+  return false;
+}
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5);
+doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10);
 /**
  * ====================================================
  * Please read the /exercises-info/e4.md file. It describes different types of syntax to write functions
@@ -35,10 +42,26 @@
  */
 
 // Your code goes here...
-
-
-
-
+function getValueWithConditionOne (num1, num2) {
+  if (num1 === 40 && num2 === 40) {
+    return num1 + num2;
+  } else {
+    return (num1 + num2) * 2;
+  }
+};
+const getValueWithConditionThree = function  (num1, num2) {
+  if (num1 === 40 && num2 === 40) {
+    return num1 + num2;
+  } else {
+    return (num1 + num2) * 2; 
+  }
+};
+const getValueWithConditionTwo = (num1, num2) => { if (num1 === 40 && num2 === 40) {
+  return num1 + num2;
+} else {
+  return (num1 + num2) * 2;
+}
+};
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
 // If the test has all tests passed, switch to the next exercise file
